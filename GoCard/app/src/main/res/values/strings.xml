@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoCard</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="url_gocard_site">http://gocard.info</string>
+    <string name="url_gocard_rest"> http://gocard.info/rest</string>
+
+    <string name="error_cardparam_is_null">CardParams is null, probably you forgot to call setParams</string>
+
+    <string name="main_hint_name">Name</string>
+    <string name="main_hint_title">Job Title</string>
+    <string name="main_hint_mail">E-mail</string>
+    <string name="main_hint_phone">Phone</string>
+
+</resources>

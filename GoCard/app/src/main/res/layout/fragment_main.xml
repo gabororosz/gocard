@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".Main$PlaceholderFragment"
+                android:gravity="fill_horizontal"
+                android:background="@drawable/bg">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/main_btn_container"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/logo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="Orosz Gábor"
+            android:id="@+id/main_name"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="@dimen/main_edit_text_size"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textColor="@color/edit_text_color"
+            android:hint="@string/main_hint_name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android Developer"
+            android:id="@+id/main_job_title"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/main_edit_text_size"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textColor="@color/edit_text_color"
+            android:hint="@string/main_hint_title"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="gabor.orosz@me.com"
+            android:id="@+id/main_mail"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/main_edit_text_size"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textColor="@color/edit_text_color"
+            android:hint="@string/main_hint_mail"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+36 30 610 6976"
+            android:id="@+id/main_phone"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/main_edit_text_size"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColor="@color/edit_text_color"
+            android:hint="@string/main_hint_phone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/main_btn_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Share"
+            android:id="@+id/main_btn_send"
+            android:focusable="true"
+            android:textColor="@color/btn_text_color"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="See others"
+            android:id="@+id/main_btn_go_to_site"
+            android:focusable="true"
+            android:textColor="@color/btn_text_color"/>
+    </LinearLayout>
+</RelativeLayout>
